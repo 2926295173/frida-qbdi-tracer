@@ -4,6 +4,7 @@
  * @param {*} log_file_path 日志文件的路径
  */
 export default function warp_vm_run(vm_run_func, log_file_path) {
+    /****************** 自定义native主动调用，下方 ****************/       
     let baselibEncryptor = Module.findBaseAddress("libEncryptor.so");
     let addr_2BD8 = baselibEncryptor.add(0x2BD8);
     let str0 = "0123456789abcdef";
@@ -24,4 +25,5 @@ export default function warp_vm_run(vm_run_func, log_file_path) {
     console.log(ret, "\r\n", hexdump(arg1, {
         length: ret_len
     }))
+    /****************** 自定义native主动调用，上方 ****************/       
 }
