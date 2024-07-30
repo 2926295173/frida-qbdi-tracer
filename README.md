@@ -29,3 +29,11 @@ frida.core.RPCException: Error: Invalid QBDI version !
 以上2个异常情况，可能是push libQBDI.so到手机时出了问题，重新运行python start_trace.py即可，其他异常情况待定
 
 如果trace过程中遇到其他异常情况，可以加我星球，再进行解答。
+
+## 路线图
+
+修复新写出来的crash
+
+增加打印`函数名`和 `strlen`的参数
+修复相对偏移的bug
+增加load_vm_trace.apk
