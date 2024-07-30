@@ -2,8 +2,8 @@
 
 ## 环境
 
-需要安装node，python，frida
-
+需要安装 node，python，frida , 
+需要安装 npm install frida-compile
 ## 使用方法
 
 1. 修改warp_vm_run.js中把warp_vm_run函数，把该函数修改成自己想要的主动调用，目前仅支持native
