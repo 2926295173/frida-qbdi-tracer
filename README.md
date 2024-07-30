@@ -35,5 +35,7 @@ frida.core.RPCException: Error: Invalid QBDI version !
 修复新写出来的crash
 
 增加打印`函数名`和 `strlen`的参数
+
 修复相对偏移的bug
+
 增加load_vm_trace.apk
